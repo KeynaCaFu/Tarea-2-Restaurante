@@ -21,6 +21,18 @@
         .table-actions {
             width: 10%; 
         }
+        .btn-finalize {
+            padding: 6px 12px; 
+            font-size: 14px; 
+            background-color: #6aa728;
+            color: #fff;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        .btn-finalize:hover {
+            background-color: #5ba36b; 
+        }
     </style>
 </head>
 <body>
@@ -33,9 +45,9 @@
     <li class="nav-item" role="presentation">
         <button class="nav-link rounded-5" id="profile-tab2" data-bs-toggle="tab" data-bs-target="#comandas" type="button" role="tab" aria-controls="comandas" aria-selected="false">Gestionar Comandas</button>
     </li>
-    <li class="nav-item" role="presentation">
+    <!-- <li class="nav-item" role="presentation">
         <button class="nav-link rounded-5" id="contact-tab2" data-bs-toggle="tab" data-bs-target="#contact" type="button" role="tab" aria-controls="contact" aria-selected="false">Contacto</button>
-    </li>
+    </li> -->
 </ul>
 
 <div class="tab-content mt-4">
@@ -62,7 +74,7 @@
                         <label for="quantity" class="form-label">Cantidad:</label>
                         <input type="number" class="form-control" id="quantity" min="1" value="1">  
                     </div>
-                    <button type="button" class="btn btn-primary" style="background-color: #1E2A44;" id="addButton">Agregar a la comanda</button>  
+                    <button type="button" class="btn btn-primary" style="background-color: #54575c;" id="addButton">Agregar a la comanda</button>  
                 </form>
             </div>
         </div>    
@@ -84,7 +96,7 @@
                     </tbody>
                     <tfoot>
                         <tr>
-                            <td colspan="4" class="text-end fw-bold">Total:</td>
+                            <td colspan="3" class="text-end fw-bold">Total:</td>
                             <td id="totalGeneral" class="fw-bold">₡0</td>
                             <td></td>
                         </tr>
@@ -96,16 +108,10 @@
 
         <div class="row mt-3">
             <div class="col-12 text-end">
-                <button type="button" class="btn btn-success" id="finalizeButton">Finalizar Comanda</button>
+                <button type="button" class="btn-finalize btn-success" id="finalizeButton">Finalizar Comanda</button>
             </div>
         </div>
     </div>
-    <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab2">
-            <h2 class="text-center mb-4">Contacto</h2>
-            <p class="text-center">Para más información, contáctanos en:</p>
-            <p class="text-center">Email: info@restaurante.com</p>
-            <p class="text-center">Teléfono: 25236147</p>
-        </div>
     </div>
 </div>
 
